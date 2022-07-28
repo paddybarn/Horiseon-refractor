@@ -7,7 +7,9 @@
 body {
     background-color: #d9dcd6;
 }
-
+/* consolidated duplicate header settings into one header class "banner" */
+/* changed display settings to "flex" to properly space elements on page using "justify content" and "align-items" */
+/* expanded width to 100% to allow header to take up entire page */
 .banner {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -19,7 +21,7 @@ body {
     width: 100%;
 }
 
-
+/* changed display to "flex" */
 h1 {
     display: flex;
     font-size: 48px;
@@ -28,7 +30,9 @@ h1 {
 .seo {
     color: #d9dcd6;
 }
-
+/* changed padding size to more closely match example */
+/* changed display to "flex" */
+/* used "justify-content: flex-end" and "flex-direction: row" to allow list to appear on right side of header */
 .links {    
     padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -37,7 +41,7 @@ h1 {
     justify-content: flex-end;
     flex-direction: row;
 }
-
+/* used "list-style: none" to remove bullet points from list */
 li {
     margin: 20px;
     list-style: none;
@@ -76,6 +80,22 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
+/* organized header elements chronologically */
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
 
 .benefits {
     margin-right: 20px;
@@ -175,20 +195,6 @@ p {
     max-height: 200px;
 }
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
 .footer {
     padding: 30px;
@@ -197,6 +203,6 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+.footer h4 {
     font-size: 20px;
 }
